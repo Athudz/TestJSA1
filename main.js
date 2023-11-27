@@ -21,7 +21,7 @@ btn_click[0].addEventListener("click", (e)=>{
                    item_div.innerHTML = `
                    <div class="card">
                    <div class="img">
-                     <img src="${item.image}" alt="Watch">
+                     <img src="${item.Image}" alt="Watch">
                    </div>
                    <div class="text">
                      <h3>${item.name_product}</h3>
@@ -51,7 +51,7 @@ btn_click[0].addEventListener("click", (e)=>{
         }
         localStorage.setItem("user_info", JSON.stringify (products))
 })
-btn_click.addEventListener("click", (e)=> {
+btn_click[0].addEventListener("click", (e)=> {
      e.preventDefault
     var user_info = JSON.parse(localStorage.getItem("user_info"))
     console.log("user_info")
